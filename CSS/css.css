@@ -1,0 +1,241 @@
+*{
+	text-align: center;
+	animation-name: girar;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+}
+body{
+	animation-name: grnwht;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes grnwht{
+	from{
+		background: #618B4A
+	}
+	to{
+		background: #AFBC88;
+	}
+}
+@keyframes girar{
+	from{
+		transform: rotate(170deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate2{
+	from{
+		transform: rotate(360deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}
+@keyframes translate{
+	from{
+		transform: translate3d(10px,0px,0px);
+	}
+	to{
+		transform: translate3d(0px,0px,0px);
+	}
+}
+@keyframes rotar{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(359deg);
+	}
+}
+@keyframes colors{
+	from{
+		color: white;
+	}
+	to{
+		color:pink;
+	}
+}
+@keyframes colors2{
+	from{
+		 : white;
+	}
+	to{
+		color: orange;
+	}
+}
+#agrupar{
+	width: 1125px;
+	margin: 11px auto;
+	text-align: left;
+}
+#seccion{
+	background: linear-gradient(#474943 15%, #000000 100%);
+	border: 1.5px solid white;
+	border-radius: 10px;
+	width: 1125px;
+	height: 1200px;
+	margin: 15px auto;
+	padding: 1px;
+}
+.Yo{
+	width: 70px;
+	height: auto;
+	transition: opacity 1s ease-in-out;
+}
+.Yo:active{
+	opacity: 0;
+}
+#megaDiv{
+	clear:left;
+	width: 1125px;
+	height: auto;
+	margin: 15px;
+}
+.img{
+	width: 150px;
+	height: auto;
+	float: center;
+	animation: rotar 2s infinite linear;
+}
+#Acerca{
+	margin-left: 20px;
+	margin-top: 15px;
+	width: 500px;
+	border: 2px solid red;
+	border-radius: 10px;
+	padding: 5px;
+	font: 15px Verdana, sans-serif;
+	color: #CCCCCC;
+	float: left;
+}
+#Acerca:active{
+	animation-name: translate;
+	animation-duration: 1000s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#star1{
+	position: absolute;
+	margin-right: 75px;
+	animation-name: rotate;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	transition: opacity 1s ease-in-out;
+}
+#star1:hover{
+	opacity: 0;
+}
+#star1B{
+	opacity: 0;
+	margin-right: 75px;
+	transition: opacity 0.2s ease-in-out;
+	animation-name: rotate;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+#star1B:hover{
+	opacity: 1;
+}
+#star2{
+	position: absolute;
+	margin-left: 75px;
+	animation-name: rotate2;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	transition: opacity 0.2s ease-in-out;
+}
+#star2:hover{
+	opacity: 0;
+}
+#star2B{
+	opacity: 0;
+	margin-left: 75px;
+	transition: opacity 0.2s ease-in-out;
+	animation-name: rotate2;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+#star2B:hover{
+	opacity: 1;
+}
+#exp{
+	align-self: right;
+	margin: 15px;
+	width: 500px;
+	border: 2px solid #00FFFF;
+	border-radius: 10px;
+	padding: 5px;
+	font: 15px Verdana, sans-serif;
+	color: #CCCCCC;
+	float: left;
+}
+#exp:active{
+	animation-name: translate;
+	animation-duration: 1000s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+blockquote{
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+blockquote:hover{
+	color: white;
+	text-decoration: underline;
+}
+#Acerca > p:hover{
+	animation-name: colors;
+	animation-duration: 5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+#expp:hover{
+	animation-name: colors2;
+	animation-duration: 5s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+#idiomas{
+	align-self: right;
+	margin: 15px;
+	width: 500px;
+	height: 125px;
+	border: 2px solid blue;
+	border-radius: 10px;
+	padding: 5px;
+	font: 15px Verdana, sans-serif;
+	color: #CCCCCC;
+	float: left;
+}
+#idiomash >h1{
+	display: inline-block;
+	background: linear-gradient(darkgreen 30%, green 70%);
+	border: solid 1px black;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#estudios{
+	align-self: right;
+	margin: 15px;
+	width: 500px;
+	height: 125px;
+	border: 2px solid yellow;
+	border-radius: 10px;
+	padding: 5px;
+	font: 15px Verdana, sans-serif;
+	color: #CCCCCC;
+	float: left;
+}
